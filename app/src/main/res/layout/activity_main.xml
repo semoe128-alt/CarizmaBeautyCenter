@@ -1,0 +1,105 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- الصورة الخلفية تغطي كامل الشاشة -->
+    <ImageView
+        android:id="@+id/fullScreenImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:src="@drawable/your_fullscreen_image"
+        android:contentDescription="Background Image"/>
+
+    <!-- المحتوى فوق الصورة مع إمكانية التمرير -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="32dp">
+
+            <TextView
+                android:id="@+id/tvDescriptionMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="نقدم أفضل خدمات تصفيف الشعر والعناية به، باستخدام أحدث المنتجات وأفضل الفنيين لضمان مظهر رائع وصحي دائمًا."
+                android:textSize="30sp"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="#050103"/>
+
+            <Button
+                android:id="@+id/btnMakeup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💋 Makeup"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#FF6F91"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/btnHair"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💇 Hair Styling"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#FFA07A"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/btnNails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💅 Nails"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#FFB347"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/btnSkincare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💆 Skincare"
+                android:layout_marginBottom="24dp"
+                android:backgroundTint="#8FC1E3"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/btnWhatsApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="احجز الآن عبر WhatsApp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#25D366"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/btnAbout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="عن Carizma"
+                android:backgroundTint="#5B3A70"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- زر سياسة الخصوصية -->
+            <Button
+                android:id="@+id/btnPrivacyPolicy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📄 سياسة الخصوصية"
+                android:backgroundTint="#9E9E9E"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

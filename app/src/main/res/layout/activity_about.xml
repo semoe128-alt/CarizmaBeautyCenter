@@ -1,0 +1,67 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- الصورة الخلفية تغطي كامل الشاشة -->
+    <ImageView
+        android:id="@+id/fullScreenImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/your_fullscreen_image"
+        android:contentDescription="Background Image" />
+
+    <!-- ScrollView مع تباعد مريح من الأعلى والأسفل -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:paddingHorizontal="24dp"
+        android:paddingTop="80dp"
+        android:paddingBottom="80dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <!-- النص التعريفي -->
+            <TextView
+                android:id="@+id/tvAbout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Carizma Beauty Center\nنقدم أفضل خدمات تصفيف الشعر والعناية به، باستخدام أحدث المنتجات وأفضل الفنيين لضمان مظهر رائع وصحي دائمًا."
+                android:textSize="20sp"
+                android:textColor="#0E0410"
+                android:lineSpacingExtra="6dp"
+                android:layout_marginBottom="40dp"
+                android:textAlignment="center" />
+
+            <!-- زر الاتصال -->
+            <Button
+                android:id="@+id/btnCall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📞 اتصال مباشر"
+                android:textSize="18sp"
+                android:layout_marginBottom="24dp"
+                android:backgroundTint="#FF4081"
+                android:textColor="#FFFFFF"
+                android:paddingVertical="12dp" />
+
+            <!-- زر واتساب -->
+            <Button
+                android:id="@+id/btnWhatsApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💬 تواصل عبر WhatsApp"
+                android:textSize="18sp"
+                android:backgroundTint="#25D366"
+                android:textColor="#FFFFFF"
+                android:paddingVertical="12dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

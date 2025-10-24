@@ -1,0 +1,43 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.carizma.beautycenter">
+
+    <!-- الصلاحيات -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <!-- تعريف الـ feature للهاتفية، required=false يعني التطبيق يشتغل على الأجهزة اللي مفيهاش اتصال -->
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:label="Carizma Beauty Center
+"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CarizmaBeauty">
+
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".HairActivity" />
+        <activity android:name=".MakeupActivity" />
+        <activity android:name=".NailsActivity" />
+        <activity android:name=".SkincareActivity" />
+
+        <!-- صفحة سياسة الخصوصية الجديدة -->
+        <activity android:name=".PrivacyPolicyActivity" />
+
+        <!-- Splash Screen -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- الصفحة الرئيسية -->
+        <activity android:name=".MainActivity" />
+
+    </application>
+</manifest>

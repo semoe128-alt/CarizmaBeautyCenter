@@ -1,0 +1,54 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- الصورة الخلفية تغطي كامل الشاشة -->
+    <ImageView
+        android:id="@+id/fullScreenImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/your_fullscreen_image"
+        android:contentDescription="Background Image" />
+
+    <!-- المحتوى فوق الصورة -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:paddingHorizontal="24dp"
+        android:paddingTop="80dp"
+        android:paddingBottom="80dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- العنوان -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💅 Nails Care  Design"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#E91E63"
+                android:layout_marginBottom="32dp"
+                android:textAlignment="center" />
+
+            <!-- النص التفصيلي -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="في Carizma Beauty Center نهتم بجمال أظافرك باستخدام أحدث تقنيات العناية والتصميم.\n\nخدماتنا تشمل:\n- مانيكير وباديكير احترافي.\n- تشكيل الأظافر والعناية بالبشرة المحيطة.\n- ألوان وطلاءات عصرية ومميزة.\n- جلسات ترطيب وعناية متكاملة لليدين والقدمين."
+                android:textSize="20sp"
+                android:textColor="#160707"
+                android:lineSpacingExtra="8dp"
+                android:textAlignment="center"
+                android:layout_marginBottom="40dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

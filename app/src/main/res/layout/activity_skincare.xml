@@ -1,0 +1,52 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- الصورة الخلفية تغطي كامل الشاشة -->
+    <ImageView
+        android:id="@+id/fullScreenImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/your_fullscreen_image"
+        android:contentDescription="Background Image" />
+
+    <!-- المحتوى القابل للتمرير -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:paddingHorizontal="24dp"
+        android:paddingTop="80dp"
+        android:paddingBottom="80dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- العنوان -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🌸 Skin Care  Beauty"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#FF4081"
+                android:layout_marginBottom="30dp" />
+
+            <!-- النص الرئيسي -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="في Carizma Beauty Center نهتم بجمال بشرتك ولمعانها الطبيعي.\n\nخدماتنا:\n- تنظيف عميق للبشرة.\n- جلسات ترطيب وتغذية.\n- إزالة الرؤوس السوداء والبيضاء.\n- ماسكات طبيعية تناسب كل نوع بشرة.\n\nاهتمي ببشرتك، لأنها سر جمالك الحقيقي."
+                android:textSize="20sp"
+                android:textColor="#0E0410"
+                android:lineSpacingExtra="6dp"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
