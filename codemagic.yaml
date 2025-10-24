@@ -4,12 +4,10 @@ workflows:
     max_build_duration: 60
     environment:
       vars:
-        # Codemagic سيختار JAVA_HOME تلقائيًا
+        DUMMY_VAR: "1"
     scripts:
       - name: Build release AAB
         script: |
           ./gradlew clean :app:bundleRelease
     artifacts:
       - app/build/outputs/bundle/release/*.aab
-
-
