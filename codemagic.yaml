@@ -1,0 +1,15 @@
+workflows:
+  android-release:
+    name: Android Release
+    max_build_duration: 60
+    environment:
+      vars:
+        # اترك السطر هذا لتعريف JAVA_HOME الافتراضي الخاص بـ Codemagic
+        # Codemagic ستختار النسخة المناسبة تلقائياً
+    scripts:
+      - name: Build release AAB
+        script: |
+          ./gradlew clean :app:bundleRelease
+    artifacts:
+      - app/build/outputs/bundle/release/*.aab
+
