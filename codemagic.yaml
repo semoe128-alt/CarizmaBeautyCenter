@@ -4,14 +4,10 @@ workflows:
     max_build_duration: 60
     environment:
       vars:
-        JAVA_HOME: /usr/lib/jvm/java-11-openjdk
+        JAVA_HOME: /usr/lib/jvm/java-11-openjdk-amd64
     scripts:
       - name: Build release AAB
         script: |
           ./gradlew clean bundleRelease
     artifacts:
-      - build/app/outputs/bundle/release/*.aab
-
-
-
-
+      - app/build/outputs/bundle/release/*.aab
